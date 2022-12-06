@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "TheShield",
+	"description": "Detect phishing or not",
+	"version": "1.0",
+	"author": "Tran Van Tu",
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"browser_action": {
+        "default_popup": "index.html",
+		"default_icon": "icon.png",
+		"default_title": "TheShield"
+	},
+	"permissions": ["activeTab", "http://localhost:5000/*"],
+	"background": {
+		"scripts": ["background.js"], 
+		"persistent": false 
+	}
+ 
+}
